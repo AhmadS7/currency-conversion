@@ -14,7 +14,7 @@ function App() {
   const [amount, setAmount] = useState(1);
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true);
 
-  let toAmount, fromAmount;
+  let fromAmount, toAmount;
   if (amountInFromCurrency) {
     fromAmount = amount;
     toAmount = amount * exchangeRate;
